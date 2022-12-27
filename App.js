@@ -20,7 +20,7 @@ deleteTodo = (id) =>{
 }
  addTodo = (todo) => {
    todo.id = Math.floor(Math.random() * 50);
-   let todos = [...this.state.todos, todo];
+   let todos = [todo, ...this.state.todos];
    this.setState({
      todos
    })
